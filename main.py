@@ -81,11 +81,11 @@ def notch_filter(img, image_path, border_value=0.9997):
 
 
 if __name__ == '__main__':
-    '''for image_path in os.listdir('stripes' + os.path.sep):
+    for image_path in os.listdir('stripes' + os.path.sep):
         img = np.float32(cv.imread(os.path.join('stripes', image_path), 0))
         fft_image = apply_dfft(img)
         show_dfft(img, fft_image, image_path)
-        cv.imwrite(os.path.join('histogram', image_path + '.png'), hist_dfft(fft_image))'''
+        cv.imwrite(os.path.join('histogram', image_path + '.png'), hist_dfft(fft_image))
 
     for image_path in os.listdir('stripes' + os.path.sep):
         img = np.float32(cv.imread(os.path.join('stripes', image_path), 0))
